@@ -1,0 +1,18 @@
+h1. Wygwam Upload Tags extension
+
+This EE2 extension demonstrates how to use "Wygwam’s":http://pixelandtonic.com new @wygwam_config@ hook. It parses Wygwam’s Upload Directory settings for @{username}@, @{member_id}@, and @{group_id}@ tags.
+
+h3. Requirements
+
+* "ExpressionEngine":http://expressionengine.com/index.php?affiliate=brandonkelly&page=/public_beta/ 2.0.1 build 20100215 or later
+* "Wygwam":http://pixelandtonic.com 2.0.1 or later
+
+h3. Installation
+
+* Create a folder called “wygwam_upload_tags” in system/expressionengine/third_party/
+* Upload ext.wygwam_upload_tags.php to system/expressionengine/third_party/wygwam_upload_tags/
+* Enable Wygwam Upload Tags in Add-Ons → Extensions
+
+h3. Usage
+
+To use Wygwam Upload Tags, just add a @{username}@, @{member_id}@, or @{group_id}@ tag to your Upload Directory’s Server Path and URL settings within Admin → Content Administration → File Upload Preferences. The extension will then modify Wygwam’s Upload Directory settings per page load, based on the current member’s info.
