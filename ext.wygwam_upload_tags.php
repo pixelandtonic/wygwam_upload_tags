@@ -77,7 +77,10 @@ class Wygwam_upload_tags_ext {
 		}
 
 		// Does this field have an Upload Directory set?
-		if ($settings['upload_dir'] && isset($config['filebrowserImageBrowseUrl']))
+		$upload_dir = isset($config['upload_dir']) ? $config['upload_dir']
+			: (isset($settings['upload_dir']) ? $settings['upload_dir'] : FALSE);
+
+		if ($upload_dir && isset($config['filebrowserImageBrowseUrl']))
 		{
 			// Prepare the tags we wish to parse
 			$vars = array(
@@ -87,7 +90,7 @@ class Wygwam_upload_tags_ext {
 			);
 
 			// Get a reference to the Upload Directory session array
-			$sess =& $_SESSION['wygwam_'.$settings['upload_dir']];
+			$sess =& $_SESSION['wygwam_'.$upload_dir];
 
 			// Parse the Server Path and URL settings
 			$sess['p'] = $this->EE->functions->var_swap($sess['p'], $vars); // Server Path
