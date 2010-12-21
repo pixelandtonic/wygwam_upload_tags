@@ -20,7 +20,7 @@ class Wygwam_upload_tags_ext {
 	/**
 	 * Class Constructor
 	 */
-	function Wygwam_upload_tags_ext()
+	function __construct()
 	{
 		// Make a local reference to the ExpressionEngine super object
 		$this->EE =& get_instance();
