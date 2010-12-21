@@ -12,7 +12,7 @@
 class Wygwam_upload_tags_ext {
 
 	var $name           = 'Wygwam Upload Tags';
-	var $version        = '1.0';
+	var $version        = '1.0.1';
 	var $description    = 'Parses Wygwam\'s Upload Directory settings for {username}, {member_id}, and {group_id}';
 	var $settings_exist = 'n';
 	var $docs_url       = 'http://github.com/brandonkelly/wygwam_upload_tags';
