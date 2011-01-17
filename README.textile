@@ -9,8 +9,7 @@ h3. Requirements
 
 h3. Installation
 
-* Create a folder called “wygwam_upload_tags” in system/expressionengine/third_party/
-* Upload ext.wygwam_upload_tags.php to system/expressionengine/third_party/wygwam_upload_tags/
+* Upload the wygwam_upload_tags folder to ext.wygwam_upload_tags.php to system/expressionengine/third_party/
 * Enable Wygwam Upload Tags in Add-Ons → Extensions
 
 h3. Usage
