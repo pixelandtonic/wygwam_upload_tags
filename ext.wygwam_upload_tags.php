@@ -59,7 +59,8 @@ class Wygwam_upload_tags_ext {
 	function disable_extension()
 	{
 		// Remove all Wygwam_upload_tags_ext rows from exp_extensions
-		$this->EE->db->query('DELETE FROM exp_extensions WHERE class = "Wygwam_upload_tags_ext"');
+		$this->EE->db->where('class', 'Wygwam_upload_tags_ext')
+		             ->delete('exp_extensions');
 	}
 
 	// --------------------------------------------------------------------
