@@ -5,7 +5,7 @@
  * Wygwam Upload Tags
  * 
  * @author    Brandon Kelly <brandon@pixelandtonic.com>
- * @copyright Copyright (c) 2010 Brandon Kelly
+ * @copyright Copyright (c) 2011 Pixel & Tonic, Inc
  * @license   http://creativecommons.org/licenses/by-sa/3.0/ Attribution-Share Alike 3.0 Unported
  */
 
