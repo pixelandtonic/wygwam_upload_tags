@@ -36,8 +36,9 @@ class Wygwam_upload_tags_ext {
 		// add the row to exp_extensions
 		$this->EE->db->insert('extensions', array(
 			'class'    => 'Wygwam_upload_tags_ext',
-			'hook'     => 'wygwam_config',
 			'method'   => 'wygwam_config',
+			'hook'     => 'wygwam_config',
+			'settings' => '',
 			'priority' => 10,
 			'version'  => $this->version,
 			'enabled'  => 'y'
