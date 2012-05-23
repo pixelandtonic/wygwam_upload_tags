@@ -97,6 +97,12 @@ class Wygwam_upload_tags_ext {
 			// Parse the Server Path and URL settings
 			$sess['p'] = $this->EE->functions->var_swap($sess['p'], $vars); // Server Path
 			$sess['u'] = $this->EE->functions->var_swap($sess['u'], $vars); // URL
+
+			// Create the folder if necessary
+			if (!file_exists($sess['p']))
+			{
+				@mkdir($sess['p'], DIR_WRITE_MODE, TRUE);
+			}
 		}
 
 		// Return the (unmodified) config
